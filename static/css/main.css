@@ -33,7 +33,7 @@ body {
 .login {
 	position: absolute;
 	top: 40%;
-	left: 45%;
+	left: 48%;
 	margin: -150px 0 0 -150px;
 	width:400px;
 	height:400px;
@@ -66,7 +66,7 @@ h1{
 }
 .copyright{
 	text-align: center;
-    margin-top: 580px;
+    margin-top: 800px;
     font-size: 25px;
 }
 .copyright a{
