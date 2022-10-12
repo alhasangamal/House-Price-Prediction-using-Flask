@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home Price Prediction</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static',filename ='img/logo.jpg')}}">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type="text/css" media='screen' href="{{url_for('static',filename ='css/main.css')}}">
+</head>
+<body>
+
+<!--    <img src="{{url_for('static',filename ='img/home.jpg')}}">-->
+<!--    <button><a href="{{url_for('aboutdata')}}">About Data</a></button>-->
+        <h1>HOUSE PRICE PREDICTION 🏡</h1>
+        <div class="login">
+            <form action="{{url_for('predict')}}" method="POST">
+                <input type="number" name="bedrooms" placeholder="Enter num of Bedrooms" value="{{bed_val}}" required><br><br>
+                <input type="number" name="bathrooms" placeholder="Enter num of Bathrooms " value="{{bath_val}}" required><br><br>
+                <input type="number" name="floors" placeholder="Enter num of Floors" value="{{floor_val}}" required><br><br>
+                <input type="number" name="yr_built" placeholder="Enter Year of built" value="{{yr_built}}" required><br><br>
+                <input type="submit" value="Predict" class="btn btn-primary btn-block btn-large">
+            </form>
+            <p> House Price is: {{data}} $</p>
+        </div>
+    <p class="copyright">Copyright &copy; All Rights Reserved. Designed by <a href="https://www.linkedin.com/in/alhasan-gamal-480473173/" target="_blank">Alhasan Gamal</a></p>
+
+</body>
+</html>
